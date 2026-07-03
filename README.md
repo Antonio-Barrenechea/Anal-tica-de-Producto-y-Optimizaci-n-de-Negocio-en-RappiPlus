@@ -61,6 +61,21 @@ Se evaluó el impacto de un rediseño de la interfaz de usuario (UI) en el flujo
 #### 🚀 Recomendación de Negocio:
 **No se rechaza la Hipótesis Nula ($H_0$)**. Dado que el p-value ($0.416$) es sustancialmente mayor que el nivel de significancia del 5%, la diferencia observada del +0.60% se atribuye completamente al azar o al ruido muestral. **La recomendación estratégica es mantener la versión Control**, evitando gastar recursos técnicos y de infraestructura en desplegar un cambio de UI que no genera un retorno de inversión comprobable.
 
+
+
+### 1. Business Intelligence: Dashboard de Ventas y Margen Operativo (Power BI)
+Se estructuró un modelo de datos robusto con una tabla de hechos conectada a dimensiones (incluyendo una tabla de fechas `Dim_Fecha` independiente) para habilitar cálculos de tiempo precisos mediante DAX. El reporte se compone de dos pantallas interconectadas mediante *Drill-through*:
+
+#### 📊 Vista Overview Ejecutivo
+Monitorea métricas clave de salud financiera ($51.95M de Revenue Total, $5.96M de Profit Total, Gasto en Marketing y Ticket Promedio). Incluye una curva acumulativa de ingresos (**Revenue YTD**) para medir la aceleración comercial.
+
 ![Dashboard Overview](./images/overview.jpg)
 
+#### 🔍 Vista Detalle de Producto (Auditoría Táctica)
+Permite profundizar a nivel de SKU para identificar el origen exacto de las pérdidas del negocio, cruzando el margen operativo neto contra la inversión publicitaria asignada por producto.
+
 ![Dashboard Detalle](./images/detalle.jpg)
+
+#### 💡 Insights de Negocio Clave:
+* **Subsidio de Categorías:** La categoría de *Electrónica* es el pilar del negocio generando **+$2.06M** en ganancias reales, mientras que *Hogar* (-$0.85M) y *Moda* (-$0.99M) operan actualmente con pérdidas críticas.
+* **Anomalía de Marketing:** Al auditar los datos, se descubrió que el producto **Phone-Pro-128GB** tiene un margen destructivo (-$1.85M) debido a una sobreasignación masiva de presupuesto de marketing (cerca de $2.8M), lo que opacó por completo su facturación. Por otro lado, productos como **Blender-XL-Red** y **Jacket-Winter-M** presentan un problema de costos de producto inflados frente a su precio de venta actual.
