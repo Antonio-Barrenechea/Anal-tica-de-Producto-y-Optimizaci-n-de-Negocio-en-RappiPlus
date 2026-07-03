@@ -60,3 +60,7 @@ Se evaluó el impacto de un rediseño de la interfaz de usuario (UI) en el flujo
 
 #### 🚀 Recomendación de Negocio:
 **No se rechaza la Hipótesis Nula ($H_0$)**. Dado que el p-value ($0.416$) es sustancialmente mayor que el nivel de significancia del 5%, la diferencia observada del +0.60% se atribuye completamente al azar o al ruido muestral. **La recomendación estratégica es mantener la versión Control**, evitando gastar recursos técnicos y de infraestructura en desplegar un cambio de UI que no genera un retorno de inversión comprobable.
+
+![Dashboard Overview](./images/overview.jpg)
+
+![Dashboard Detalle](./images/detalle.jpg)
